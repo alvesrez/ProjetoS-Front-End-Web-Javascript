@@ -1,0 +1,55 @@
+body{
+    background-color: white;
+}
+
+#boxFilmes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+}
+
+.boxFilme {
+    display: flex;
+    flex-direction: row;
+    width: calc(50% - 20px); /* Define a largura para ocupar metade do espaço disponível (menos a margem entre as divs) */
+  margin: 10px 10px; /* Adiciona uma margem entre as divs */
+    background-color: #f0f0f0; /* Define uma cor de fundo */
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(190, 93, 93, 0.7);
+
+}
+
+.boxFilme:last-child {
+    margin-right: 0; /* Remove a margem direita da última div para evitar quebrar a linha */
+}
+
+.boxFilme .infoFilme {
+    margin: 0; /* Remova todas as margens internas da infoFilme */
+    font-family: Arial, sans-serif; /* Adiciona uma fonte */
+    background-color: #f0f0f0; /* Define uma cor de fundo */
+    padding: 10px; /* Adiciona preenchimento para separar as informações do filme */
+    border-radius: 32px;
+}
+
+.boxFilme img {
+    width: 200px; /* Aumenta o tamanho máximo da imagem para 35px */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 32px;
+}
+
+.infoFilme p {
+    margin: 10px 0; /* Remova as margens padrão dos parágrafos */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #333; /* Define a cor do texto */
+    text-align: jus;
+}
+
+span {  
+    font-size: 25px; /* Ajusta o tamanho da fonte para 20px */
+    margin-left: 10px; /* Adiciona um preenchimento à esquerda para separar a estrela do texto */
+
+filter: drop-shadow(0 0 5px #000);
+   
+}
